@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Echo</title>
+    <style>
+        :root {
+            --background: #121212;
+            --surface: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #E0E0E0;
+            --border: #333333;
+            --accent: #33658A;
+            --error: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: var(--surface);
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: 16px;
+            cursor: pointer;
+            padding: 8px;
+            margin-left: -8px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section-title {
+            color: var(--text-primary);
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .paragraph {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        .contact-card {
+            background-color: var(--surface);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid var(--border);
+        }
+
+        .contact-title {
+            color: var(--text-primary);
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .contact-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: #4a90e2;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background-color: var(--surface);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .faq-question {
+            color: var(--text-primary);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-title">Support</h1>
+        </header>
+
+        <main class="content">
+            <div class="contact-card">
+                <h2 class="contact-title">Contact us</h2>
+                <p class="contact-info">
+                    For assistance, contact us via email:<br>
+                    <a href="mailto:sierug.echo@gmail.com" class="contact-link">sierug.echo@gmail.com</a>
+                </p>
+            </div>
+
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-section">
+                <div class="faq-item">
+                    <p class="faq-question">How can I recover my password?</p>
+                    <p class="faq-answer">If you forgot your password, you can use the "Forgot Password" function in the login screen. You will receive a link to reset your password to the email address associated with your account.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">How can I change my privacy settings?</p>
+                    <p class="faq-answer">You can change your privacy settings by accessing the "Settings" section of your profile. Here you can manage the visibility of your posts and polls.</p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">How can I report inappropriate content?</p>
+                    <p class="faq-answer">To report inappropriate content, use the report button present on each post or poll. Our team will review the report and take the necessary action.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Support Hours</h2>
+            <p class="paragraph">
+                Our support team is available from Monday to Friday, from 9:00 to 18:00 (CET). 
+                We commit to respond to all requests within 24 working hours.
+            </p>
+
+            <h2 class="section-title">Important Notes</h2>
+            <p class="paragraph">
+                For a faster response, please include in your emails:<br>
+                • Your username<br>
+                • A detailed description of the problem<br>
+                • Screenshot or video of the problem (if applicable)
+            </p>
+        </main>
+    </div>
+</body>
+</html> 
