@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elimina Account - Echo</title>
+    <style>
+        :root {
+            --background: #121212;
+            --surface: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #E0E0E0;
+            --border: #333333;
+            --accent: #33658A;
+            --error: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: var(--surface);
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: 16px;
+            cursor: pointer;
+            padding: 8px;
+            margin-left: -8px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .warning {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--error);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            color: var(--text-primary);
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .paragraph {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        .list-item {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            margin-left: 16px;
+        }
+
+        .important-note {
+            color: var(--text-primary);
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            margin: 20px 0;
+            padding: 16px;
+            background-color: rgba(239, 68, 68, 0.1);
+            border-radius: 8px;
+        }
+
+        .delete-button {
+            background-color: var(--error);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            transition: background-color 0.2s;
+        }
+
+        .delete-button:hover {
+            background-color: #dc2626;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <p class="warning">
+                ⚠️ Delete Your Echo Account
+                <br>
+                <br>
+                This action is irreversible. Once deleted, your data cannot be recovered.
+            </p>
+            <p class="paragraph">
+                This document provides step-by-step instructions on how to delete your account from our application. Please read carefully before proceeding, as this action is irreversible.
+            </p>
+            <h2 class="section-title">How to delete your account</h2>
+            <p class="paragraph">
+                1. Login to your profile<br>
+                2. Open settings<br>
+                3. Scroll to the bottom<br>
+                4. Select "Delete Account"
+            </p>
+
+            <h2 class="section-title">What happens when you delete your account</h2>
+            <p class="paragraph">
+                All data associated with your account will be permanently deleted, including:
+            </p>
+            <p class="list-item">• All your posts photos</p>
+            <p class="list-item">• All your polls photos</p>
+
+            <p class="important-note">
+                Deleting your account is irreversible. Once deleted, your data cannot be recovered.
+            </p>
+
+            <p class="paragraph">
+                If you have any questions or concerns, please contact our support team at <a href="mailto:sierug.echo@gmail.com">sierug.echo@gmail.com</a> before proceeding.
+            </p>
+
+        </main>
+    </div>
+</body>
+</html> 
